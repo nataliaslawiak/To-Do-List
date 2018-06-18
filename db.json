@@ -1,0 +1,112 @@
+{
+  "task": [
+    {
+      "description": "zadanie numer 1",
+      "id": 1,
+      "name": "nat",
+      "status": "completed"
+    },
+    {
+      "description": "Poprawic ustawienia aparatu",
+      "id": 2,
+      "name": "karo",
+      "status": "in-progress"
+    },
+    {
+      "description": "zadanie 2",
+      "name": "pacho",
+      "status": "to-do",
+      "id": 3
+    },
+    {
+      "description": "jj",
+      "name": "",
+      "status": "to-do",
+      "id": 4
+    },
+    {
+      "description": "ak ",
+      "name": "nat",
+      "status": "completed",
+      "id": 5
+    },
+    {
+      "description": "nn",
+      "name": "nat",
+      "status": "to-do",
+      "id": 6
+    },
+    {
+      "status": "to-do",
+      "start": "1868",
+      "end": "1880",
+      "week": "25",
+      "id": 7
+    },
+    {
+      "status": "to-do",
+      "id": 8
+    },
+    {
+      "status": "to-do",
+      "id": 9
+    }
+  ],
+  "list": [
+    {
+      "start": 1690,
+      "end": 1704,
+      "week": 14
+    },
+    {
+      "start": 1706,
+      "end": 1720,
+      "week": 15
+    },
+    {
+      "start": 1722,
+      "end": 1736,
+      "week": 16
+    },
+    {
+      "start": 1738,
+      "end": 1754,
+      "week": 17
+    },
+    {
+      "start": 1756,
+      "end": 1764,
+      "week": 18
+    },
+    {
+      "start": 1766,
+      "end": 1778,
+      "week": 19
+    },
+    {
+      "start": 1780,
+      "end": 1796,
+      "week": 20
+    },
+    {
+      "start": 1798,
+      "end": 1812,
+      "week": 21
+    },
+    {
+      "start": 1814,
+      "end": 1832,
+      "week": 22
+    },
+    {
+      "start": 1834,
+      "end": 1848,
+      "week": 23
+    },
+    {
+      "start": 1850,
+      "end": 1866,
+      "week": 24
+    }
+  ]
+}
