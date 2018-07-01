@@ -29,6 +29,10 @@ class InputTask extends React.Component{
                 name:this.state.name
             });
         }
+        this.setState({
+            taskName: "",
+            name: ""
+        })
     };
 
     render(){

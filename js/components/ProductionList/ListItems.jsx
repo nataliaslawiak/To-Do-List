@@ -7,8 +7,13 @@ class ListItems extends React.Component {
         return (
             <tbody>
                 {loading && <tr><td>Loading...</td></tr>}
-                {!loading && lists.map((item => (
-                    <ListItem item={item} />
+                {!loading && lists.sort((a, b)=> a.week - b.week).map((item => (
+                    <ListItem
+                        item={item}
+                        key={item.id}
+                        editList={this.props.editList}
+                        deleteList={this.props.deleteList}
+                    />
                 )))
                 }
             </tbody>

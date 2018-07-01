@@ -7,27 +7,28 @@ class InProgressItem extends React.Component{
     };
 
     render(){
-        let bgColor;
         const {item} = this.props;
-        if(item.name === "nat"){
-            bgColor = "#f0ffed"
-        } else if (item.name === "mal"){
-            bgColor = "#fffded"
-        } else if (item.name === "karo"){
-            bgColor = "#ffe2e0"
-        } else if (item.name === "pacho"){
-            bgColor = "#f2edff"
+
+        /*let bgColor;
+        if(item.name === "Nat"){
+            bgColor = "#f2f7e0"
+        } else if (item.name === "Mal"){
+            bgColor = "#fdeed5"
+        } else if (item.name === "Karo"){
+            bgColor = "#f6e8e5"
+        } else if (item.name === "Pacho"){
+            bgColor = "#c5d1e2"
         } else {
             bgColor = "white"
-        }
+        }*/
 
         return(
-            <li key={item.id} className="to-do-li" style={{backgroundColor:bgColor}}>
-                <div style={{backgroundColor:bgColor}} className="editable_li">
+            <li key={item.id} className="to-do-li" style={{backgroundColor:"white"}}>
+                <p className="task-name">{item.name}</p>
+                <div style={{backgroundColor:"white"}} className="editable_li">
                     {item.description}
                 </div>
-                 {item.name}
-                <div>
+                <div className="mdl-btn-center">
                     <button
                         className="submit_btn"
                         onClick={event => this.handleEdit(event, {status: "completed"})}

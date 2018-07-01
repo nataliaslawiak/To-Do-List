@@ -6,7 +6,8 @@ class ListInput extends React.Component{
         this.state={
             startValue: "",
             endValue: "",
-            weekValue: ""
+            weekValue: "",
+            warning: ""
         }
     }
 
@@ -27,48 +28,68 @@ class ListInput extends React.Component{
             weekValue: event.target.value
         })
     };
+// przeiterowac po liscie i sprawdzic  czy lista juz posiada taki week
+    handleListSubmit = (event) => {
 
-    handleSubmit = (event) => {
         event.preventDefault();
-        if ( typeof this.props.onSubmit === 'function' ){
-            this.props.onSubmit({
+        const {lists} = this.props;
+        let warning = "";
+        if (!this.state.startValue || !this.state.endValue || !this.state.weekValue ){
+            warning = "Uzupełnij wszystkie pola!";
+            this.setState({warning});
+        } else if (lists.map(item => item.week).includes(parseInt(this.state.weekValue))){
+            warning = "Ten numer tygodnia już istnieje";
+            this.setState({warning});
+        } else if ( typeof this.props.listSubmit === 'function' ){
+            this.props.listSubmit({
                 startValue: this.state.startValue,
                 endValue: this.state.endValue,
                 weekValue: this.state.weekValue
             });
+            this.setState({
+                startValue: "",
+                endValue: "",
+                weekValue: "",
+                warning
+            });
         }
     };
 
+
     render(){
+        const {warning} = this.state;
         return(
-            <div className="formList">
-                <form onSubmit={event => this.handleSubmit(event)}>
-                    <input
-                        id="start"
-                        value={this.state.startValue}
-                        onChange={event => this.handleStart(event)}
-                        placeholder="Początek"
-                        type="text"
-                        autoComplete="off"
-                    />
-                    <input
-                        id="end"
-                        value={this.state.endValue}
-                        onChange={event => this.handleEnd(event)}
-                        placeholder="Koniec"
-                        type="text"
-                        autoComplete="off"
-                    />
-                    <input
-                        id="week"
-                        value={this.state.weekValue}
-                        onChange={event => this.handleWeek(event)}
-                        placeholder="Numer tygodnia"
-                        type="text"
-                        autoComplete="off"
-                    />
-                    <button className="submit_btn">Dodaj</button>
-                </form>
+            <div>
+                <div className="formList">
+                    <form onSubmit={event => this.handleListSubmit(event)}>
+                        <input
+                            id="start"
+                            value={this.state.startValue}
+                            onChange={event => this.handleStart(event)}
+                            placeholder="Początek"
+                            type="text"
+                            autoComplete="off"
+                        />
+                        <input
+                            id="end"
+                            value={this.state.endValue}
+                            onChange={event => this.handleEnd(event)}
+                            placeholder="Koniec"
+                            type="text"
+                            autoComplete="off"
+                        />
+                        <input
+                            id="week"
+                            value={this.state.weekValue}
+                            onChange={event => this.handleWeek(event)}
+                            placeholder="Numer tygodnia"
+                            type="text"
+                            autoComplete="off"
+                        />
+                        <button className="submit_btn">Dodaj</button>
+                    </form>
+                </div>
+                {warning && <h4 style={{marginTop:"20px"}}>{warning}</h4>}
             </div>
         )
     }

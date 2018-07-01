@@ -7,10 +7,11 @@ class InProgress extends React.Component{
         return(
             <div className="col-md-4">
                 <div className="to-do-box progress-box ">
-                    <h4>Bierzące zadania</h4>
+                    <p className="to-do-header">Bierzące zadania</p>
                     <ul>
                         {this.props.items.map(item =>
                             <InProgressItem
+                                key={item.id}
                                 item={item}
                                 editTask={this.props.editTask}
                             />

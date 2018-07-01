@@ -6,9 +6,9 @@ class ListHeader extends React.Component {
             <thead className="thead-dark">
             <tr>
                 <th scope="col">Tydzień</th>
-                <th scope="col">Start</th>
+                <th scope="col">Początek</th>
                 <th scope="col">Koniec</th>
-                <th scope="col">Suma</th>
+                <th scope="col">&sum;</th>
             </tr>
             </thead>
         )

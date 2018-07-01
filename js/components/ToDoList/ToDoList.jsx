@@ -8,12 +8,13 @@ class ToDoList extends React.Component{
         return (
             <div className="col-md-4">
                 <div className="to-do-box">
-                    <h4>Do zrobienia</h4>
+                    <p className="to-do-header">Do zrobienia</p>
                     <div>
                         {loading && <p>Loading...</p>}
                         {!loading && <ul>
-                            {items.map(item =>
+                            {items.sort((a, b)=> b.id - a.id).map(item =>
                                 <ToDoItem
+                                    key={item.id}
                                     item={item}
                                     editTask={this.props.editTask}
                                 />

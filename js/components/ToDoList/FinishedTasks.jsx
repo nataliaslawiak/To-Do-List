@@ -7,10 +7,11 @@ class FinishedTasks extends React.Component{
         return(
             <div className="col-md-4">
                 <div className="to-do-box done-box ">
-                    <h4>Zrobione!</h4>
+                    <p className="to-do-header">Zrobione!</p>
                     <ul>
                         {this.props.items.map(item =>
                             <FinishedItem
+                                key={item.id}
                                 item={item}
                             />
                         )}

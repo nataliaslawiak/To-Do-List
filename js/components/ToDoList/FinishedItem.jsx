@@ -4,11 +4,11 @@ class FinishedItem extends React.Component{
     render(){
         const {item} = this.props;
         return(
-            <li key={item.id} className="to-do-li" style={{backgroundColor:"#d3d3d3"}}>
-                <div style={{backgroundColor:"#d3d3d3"}} className="editable_li">
+            <li key={item.id} className="to-do-li" style={{backgroundColor:"#f2f2f2"}}>
+                <p className="task-name">{item.name}</p>
+                <div style={{backgroundColor:"#f2f2f2"}} className="editable_li">
                     {item.description}
                 </div>
-                {item.name}
             </li>
         )
     }

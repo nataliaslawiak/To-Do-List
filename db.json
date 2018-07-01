@@ -1,112 +1,238 @@
 {
   "task": [
     {
-      "description": "zadanie numer 1",
+      "description": "Zadanie nr 1",
       "id": 1,
-      "name": "nat",
+      "name": "Nat",
       "status": "completed"
     },
     {
-      "description": "Poprawic ustawienia aparatu",
+      "description": "Zadanie nr 2",
       "id": 2,
-      "name": "karo",
-      "status": "in-progress"
+      "name": "Karo",
+      "status": "to-do"
     },
     {
-      "description": "zadanie 2",
-      "name": "pacho",
+      "description": "Zadanie nr 3",
+      "name": "Pacho",
       "status": "to-do",
       "id": 3
     },
     {
-      "description": "jj",
-      "name": "",
-      "status": "to-do",
+      "description": "Zadanie nr 4",
+      "name": "Mal",
+      "status": "in-progress",
       "id": 4
     },
     {
-      "description": "ak ",
-      "name": "nat",
-      "status": "completed",
+      "description": "Zadanie nr 5",
+      "name": "Nat",
+      "status": "to-do",
       "id": 5
     },
     {
-      "description": "nn",
-      "name": "nat",
-      "status": "to-do",
+      "description": "Zadanie nr 6",
+      "name": "Pacho",
+      "status": "in-progress",
       "id": 6
     },
     {
-      "status": "to-do",
-      "start": "1868",
-      "end": "1880",
-      "week": "25",
+      "description": "Zadanie nr 7",
+      "name": "Nat",
+      "status": "in-progress",
       "id": 7
     },
     {
-      "status": "to-do",
+      "description": "Zadanie nr 8",
+      "name": "Karo",
+      "status": "completed",
       "id": 8
     },
     {
-      "status": "to-do",
+      "description": "Zadanie nr 9",
+      "name": "Karo",
+      "status": "in-progress",
       "id": 9
+    },
+    {
+      "description": "Zadanie nr 10",
+      "name": "Mal",
+      "status": "completed",
+      "id": 10
+    },
+    {
+      "description": "Zadanie nr 11",
+      "name": "Nat",
+      "status": "to-do",
+      "id": 11
     }
   ],
   "list": [
     {
+      "start": 1490,
+      "end": 1502,
+      "week": 1,
+      "id": 101
+    },
+    {
+      "start": 1504,
+      "end": 1516,
+      "week": 2,
+      "id": 102
+    },
+    {
+      "start": 1518,
+      "end": 1534,
+      "week": 3,
+      "id": 103
+    },
+    {
+      "start": 1536,
+      "end": 1552,
+      "week": 4,
+      "id": 104
+    },
+    {
+      "start": 1554,
+      "end": 1570,
+      "week": 5,
+      "id": 105
+    },
+    {
+      "start": 1572,
+      "end": 1584,
+      "week": 6,
+      "id": 106
+    },
+    {
+      "start": 1586,
+      "end": 1602,
+      "week": 7,
+      "id": 107
+    },
+    {
+      "start": 1604,
+      "end": 1614,
+      "week": 8,
+      "id": 108
+    },
+    {
+      "start": 1616,
+      "end": 1628,
+      "week": 9,
+      "id": 109
+    },
+    {
+      "start": 1630,
+      "end": 1644,
+      "week": 10,
+      "id": 110
+    },
+    {
+      "start": 1646,
+      "end": 1662,
+      "week": 11,
+      "id": 111
+    },
+    {
+      "start": 1664,
+      "end": 1678,
+      "week": 12,
+      "id": 112
+    },
+    {
+      "start": 1680,
+      "end": 1688,
+      "week": 13,
+      "id": 113
+    },
+    {
       "start": 1690,
       "end": 1704,
-      "week": 14
+      "week": 14,
+      "id": 114
     },
     {
       "start": 1706,
       "end": 1720,
-      "week": 15
+      "week": 15,
+      "id": 115
     },
     {
       "start": 1722,
       "end": 1736,
-      "week": 16
+      "week": 16,
+      "id": 116
     },
     {
       "start": 1738,
       "end": 1754,
-      "week": 17
+      "week": 17,
+      "id": 117
     },
     {
       "start": 1756,
       "end": 1764,
-      "week": 18
+      "week": 18,
+      "id": 118
     },
     {
       "start": 1766,
       "end": 1778,
-      "week": 19
+      "week": 19,
+      "id": 119
     },
     {
       "start": 1780,
       "end": 1796,
-      "week": 20
+      "week": 20,
+      "id": 120
     },
     {
       "start": 1798,
       "end": 1812,
-      "week": 21
+      "week": 21,
+      "id": 121
     },
     {
       "start": 1814,
       "end": 1832,
-      "week": 22
+      "week": 22,
+      "id": 122
     },
     {
       "start": 1834,
       "end": 1848,
-      "week": 23
+      "week": 23,
+      "id": 123
     },
     {
       "start": 1850,
       "end": 1866,
-      "week": 24
+      "week": 24,
+      "id": 124
+    }
+  ],
+  "wish": [
+    {
+      "title": "Mleko do kawy",
+      "id": 203
+    },
+    {
+      "title": "Słodycze",
+      "id": 204
+    },
+    {
+      "title": "Długopisy",
+      "id": 205
+    },
+    {
+      "title": "Woda",
+      "id": 206
+    },
+    {
+      "title": "URLOP",
+      "id": 207
     }
   ]
 }
